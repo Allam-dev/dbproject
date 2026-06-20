@@ -1,0 +1,495 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+        "type": "Table",
+        "position": {
+          "x": 468,
+          "y": 206
+        },
+        "data": {
+          "label": "VOLUNTEER",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "08c31e1c-fc01-4baf-be57-e1a71c438cb1",
+              "name": "ssn",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "009f4335-b3a6-43bc-bb4b-70bfb227f107",
+              "name": "name",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "88afc85b-46cd-452d-9000-df17e87272b7",
+              "name": "status",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7df61805-900a-4bc9-8a00-9bbd3a2c103d",
+              "name": "fk_DISASTEREVENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "37749ca2-646d-4834-9b90-9dce82d23d86",
+                "sourceTableId": "743c4900-c832-43f6-a3b4-4910cea77275",
+                "columns": [
+                  {
+                    "id": "fk_35e51e90-f0de-46d7-821d-20c151a98a3b",
+                    "name": "id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": true
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 127
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "db28c2a1-c520-456f-b004-cf928241e0be",
+        "type": "Table",
+        "position": {
+          "x": 1144,
+          "y": 168
+        },
+        "data": {
+          "label": "SKILL",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "85d640ee-a472-4eae-9fb7-65a05d0a58ce",
+              "name": "id",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "4c8d7d8c-f002-47b1-b5df-68b816f27868",
+              "name": "name",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c8aef334-33c6-4ee0-af9d-db05388c830b",
+              "name": "category",
+              "type": "INT",
+              "isPrimaryKey": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "743c4900-c832-43f6-a3b4-4910cea77275",
+        "type": "Table",
+        "position": {
+          "x": 833,
+          "y": 281
+        },
+        "data": {
+          "label": "DISASTEREVENT",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "35e51e90-f0de-46d7-821d-20c151a98a3b",
+              "name": "id",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "15f686bb-4825-4936-b742-41bd06064e06",
+              "name": "description",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "a7c7273b-72d0-4155-a48a-231e604a3112",
+              "name": "lat",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "07425a25-42a6-42d4-b3dd-932a4e3d12c4",
+              "name": "long",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "f4d6d466-17d1-4259-921d-7da3aa800db4",
+              "name": "status",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "6e39f422-a884-4d7f-827c-1cfcd2ba217d",
+              "name": "start_date",
+              "type": "INT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "36cfa2c9-b2fb-40bb-ba77-2e1f08a3ece0",
+              "name": "end_date",
+              "type": "INT",
+              "isPrimaryKey": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 201
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "1b346db7-f56d-476d-9263-437438b8907a",
+        "type": "Table",
+        "position": {
+          "x": 809,
+          "y": 142
+        },
+        "data": {
+          "label": "VOLUNTEER_SKILLS",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "ed0d303f-4915-4cd9-bffa-c29eda01be2a",
+              "name": "fk_VOLUNTEER",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "4e2f1548-4c9b-41cd-8dd5-fed82ec8fe7c",
+                "sourceTableId": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+                "columns": [
+                  {
+                    "id": "fk_08c31e1c-fc01-4baf-be57-e1a71c438cb1",
+                    "name": "ssn",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "6e69ec71-8ee2-4ba1-9d77-7af39e38e9be",
+              "name": "fk_SKILL",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "1169790d-0d25-40c1-b35e-d403ff7a1b08",
+                "sourceTableId": "db28c2a1-c520-456f-b004-cf928241e0be",
+                "columns": [
+                  {
+                    "id": "fk_85d640ee-a472-4eae-9fb7-65a05d0a58ce",
+                    "name": "skill_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false,
+          "isFactTable": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 78
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "8da51de8-bc8b-48c7-9cda-89d72c1c2ea9",
+        "type": "Table",
+        "position": {
+          "x": 1145.5,
+          "y": 280.5
+        },
+        "data": {
+          "label": "DISASTEREVENT_SKILLs",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "a4c85585-9ebb-49f0-a549-441e50b08c63",
+              "name": "fk_DISASTEREVENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "583bca13-ce4e-4a1c-b7ea-dc3ba8dcb079",
+                "sourceTableId": "743c4900-c832-43f6-a3b4-4910cea77275",
+                "columns": [
+                  {
+                    "id": "fk_35e51e90-f0de-46d7-821d-20c151a98a3b",
+                    "name": "id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "a0440394-c133-4d4e-9cfe-2a5215947081",
+              "name": "fk_SKILL",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f62f37b8-65ca-4072-bf31-0be1009a1f99",
+                "sourceTableId": "db28c2a1-c520-456f-b004-cf928241e0be",
+                "columns": [
+                  {
+                    "id": "fk_85d640ee-a472-4eae-9fb7-65a05d0a58ce",
+                    "name": "id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 78
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "670b6800-b262-475d-964e-9b84a7fc69cd",
+        "type": "Table",
+        "position": {
+          "x": 468,
+          "y": 362
+        },
+        "data": {
+          "label": "VOLUNTEER_PHONE",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "473110aa-d9ff-4ca6-9ded-cb509058f12f",
+              "name": "phone",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "50ec1f55-b9fe-4fa7-ac42-3bf0c9c2f2ef",
+              "name": "fk_VOLUNTEER",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "661a98a1-2efe-44a8-b3d2-7fcb19b2bd11",
+                "sourceTableId": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+                "columns": [
+                  {
+                    "id": "fk_08c31e1c-fc01-4baf-be57-e1a71c438cb1",
+                    "name": "ssn",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 78
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "743c4900-c832-43f6-a3b4-4910cea77275->ae985aa4-e237-4beb-a83a-e8997ee021be_37749ca2-646d-4834-9b90-9dce82d23d86",
+        "type": "Relational",
+        "source": "743c4900-c832-43f6-a3b4-4910cea77275",
+        "targetHandle": "foreign-key-handle-37749ca2-646d-4834-9b90-9dce82d23d86",
+        "target": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "37749ca2-646d-4834-9b90-9dce82d23d86",
+            "sourceTableId": "743c4900-c832-43f6-a3b4-4910cea77275",
+            "columns": [
+              {
+                "id": "fk_35e51e90-f0de-46d7-821d-20c151a98a3b",
+                "name": "id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "ae985aa4-e237-4beb-a83a-e8997ee021be->1b346db7-f56d-476d-9263-437438b8907a_4e2f1548-4c9b-41cd-8dd5-fed82ec8fe7c",
+        "type": "Relational",
+        "source": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+        "targetHandle": "foreign-key-handle-4e2f1548-4c9b-41cd-8dd5-fed82ec8fe7c",
+        "target": "1b346db7-f56d-476d-9263-437438b8907a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "4e2f1548-4c9b-41cd-8dd5-fed82ec8fe7c",
+            "sourceTableId": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+            "columns": [
+              {
+                "id": "fk_08c31e1c-fc01-4baf-be57-e1a71c438cb1",
+                "name": "ssn",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "db28c2a1-c520-456f-b004-cf928241e0be->1b346db7-f56d-476d-9263-437438b8907a_1169790d-0d25-40c1-b35e-d403ff7a1b08",
+        "type": "Relational",
+        "source": "db28c2a1-c520-456f-b004-cf928241e0be",
+        "targetHandle": "foreign-key-handle-1169790d-0d25-40c1-b35e-d403ff7a1b08",
+        "target": "1b346db7-f56d-476d-9263-437438b8907a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "1169790d-0d25-40c1-b35e-d403ff7a1b08",
+            "sourceTableId": "db28c2a1-c520-456f-b004-cf928241e0be",
+            "columns": [
+              {
+                "id": "fk_85d640ee-a472-4eae-9fb7-65a05d0a58ce",
+                "name": "id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "743c4900-c832-43f6-a3b4-4910cea77275->8da51de8-bc8b-48c7-9cda-89d72c1c2ea9_583bca13-ce4e-4a1c-b7ea-dc3ba8dcb079",
+        "type": "Relational",
+        "source": "743c4900-c832-43f6-a3b4-4910cea77275",
+        "targetHandle": "foreign-key-handle-583bca13-ce4e-4a1c-b7ea-dc3ba8dcb079",
+        "target": "8da51de8-bc8b-48c7-9cda-89d72c1c2ea9",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "583bca13-ce4e-4a1c-b7ea-dc3ba8dcb079",
+            "sourceTableId": "743c4900-c832-43f6-a3b4-4910cea77275",
+            "columns": [
+              {
+                "id": "fk_35e51e90-f0de-46d7-821d-20c151a98a3b",
+                "name": "id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "db28c2a1-c520-456f-b004-cf928241e0be->8da51de8-bc8b-48c7-9cda-89d72c1c2ea9_f62f37b8-65ca-4072-bf31-0be1009a1f99",
+        "type": "Relational",
+        "source": "db28c2a1-c520-456f-b004-cf928241e0be",
+        "targetHandle": "foreign-key-handle-f62f37b8-65ca-4072-bf31-0be1009a1f99",
+        "target": "8da51de8-bc8b-48c7-9cda-89d72c1c2ea9",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f62f37b8-65ca-4072-bf31-0be1009a1f99",
+            "sourceTableId": "db28c2a1-c520-456f-b004-cf928241e0be",
+            "columns": [
+              {
+                "id": "fk_85d640ee-a472-4eae-9fb7-65a05d0a58ce",
+                "name": "id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "ae985aa4-e237-4beb-a83a-e8997ee021be->670b6800-b262-475d-964e-9b84a7fc69cd_661a98a1-2efe-44a8-b3d2-7fcb19b2bd11",
+        "type": "Relational",
+        "source": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+        "targetHandle": "foreign-key-handle-661a98a1-2efe-44a8-b3d2-7fcb19b2bd11",
+        "target": "670b6800-b262-475d-964e-9b84a7fc69cd",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "661a98a1-2efe-44a8-b3d2-7fcb19b2bd11",
+            "sourceTableId": "ae985aa4-e237-4beb-a83a-e8997ee021be",
+            "columns": [
+              {
+                "id": "fk_08c31e1c-fc01-4baf-be57-e1a71c438cb1",
+                "name": "ssn",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": -511.59306225110026,
+      "y": -24.138964577656623,
+      "zoom": 1.548522322364284
+    }
+  },
+  "name": "Disaster Relief Volunteer Registry-Relational Schema",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 322638
+  },
+  "id": 455804,
+  "updatedAtTimestamp": 1778763202
+}
